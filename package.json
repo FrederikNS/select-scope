@@ -9,7 +9,7 @@
   "repository": "https://github.com/wmadden/select-scope",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": "1.8.0"
   },
   "dependencies": {}
 }
