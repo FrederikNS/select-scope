@@ -16,7 +16,7 @@ module.exports =
     for scope in scopes
       scopeRange = editor.bufferRangeForScopeAtCursor(scope)
 
-      if containsRange(scopeRange, selectionRange) && !sameRange(scopeRange, selectionRange)
+      if scopeRange? && containsRange(scopeRange, selectionRange) && !sameRange(scopeRange, selectionRange)
         editor.setSelectedBufferRange(scopeRange)
         return
 
